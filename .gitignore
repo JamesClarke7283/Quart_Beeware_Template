@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.venv
 
 # OSX useful to ignore
 *.DS_Store
