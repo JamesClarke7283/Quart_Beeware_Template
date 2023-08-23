@@ -1,7 +1,9 @@
 """Blueprint for the index route."""
+from quart import Blueprint
+from quart import render_template
 
 index = Blueprint('index', __name__)
 
 @index.route('/')
 async def home():
-    return '<h1>Hello, World!</h1>'
+    return await render_template('index.html')
